@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.LolKek">
+        <activity android:name=".DetailedActivity"/>
         <activity
-            android:name=".Grid"
+            android:name=".GridActivity"
             android:exported="false" />
         <activity android:name=".MainActivity">
             <intent-filter>

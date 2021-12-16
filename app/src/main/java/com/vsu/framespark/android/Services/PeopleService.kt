@@ -1,7 +1,7 @@
 package com.vsu.framespark.android.Services
 
 import com.google.gson.GsonBuilder
-import com.vsu.framespark.android.JSONPlaceholderApi
+import com.vsu.framespark.android.Interfaces.JSONPlaceholderApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

@@ -1,4 +1,4 @@
-package com.vsu.framespark.android
+package com.vsu.framespark.android.Interfaces
 
 import com.vsu.framespark.android.Models.People
 import retrofit2.Call

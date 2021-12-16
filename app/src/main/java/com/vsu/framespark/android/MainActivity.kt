@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun toGrid(view: View){
-        val intent = Intent(this@MainActivity,Grid::class.java)
+        val intent = Intent(this@MainActivity,GridActivity::class.java)
         startActivity(intent)
     }
 }
