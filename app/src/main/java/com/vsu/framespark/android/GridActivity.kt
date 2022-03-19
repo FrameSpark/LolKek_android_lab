@@ -17,12 +17,9 @@ import java.security.AccessController.getContext
 
 class GridActivity : AppCompatActivity() {
 
-    lateinit var textView: TextView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grid)
-        //textView = findViewById(R.id.textView4)
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         getAdvice()
@@ -33,15 +30,6 @@ class GridActivity : AppCompatActivity() {
 
         val callback = object : Callback<List<People>> {
             override fun onResponse(call: Call<List<People>>, response: Response<List<People>>) {
-                //val post = response.body()
-                //val data = mutableListOf<String>()
-                //if(post != null && post.size >0) {
-                //    for (i in 0..post.size-1) {
-                //        var people = "${post!![i].name} - " + "${post!![i].job} -" + "${post!![i].nickname}"
-                //        var name = "${post!![i].name}"
-                //        data.add(name)
-                //    }
-               // }
                 val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
                 recyclerView.adapter = CustomRecyclerAdapter(response.body())
             }
