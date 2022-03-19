@@ -36,7 +36,7 @@ class GridActivity : AppCompatActivity() {
 
             override fun onFailure(call: Call<List<People>>, t: Throwable) {
                 val duration = Toast.LENGTH_SHORT
-                val toast = Toast.makeText(applicationContext,  "Ошибка загрузки!!!", duration)
+                val toast = Toast.makeText(applicationContext,  "Ошибка загрузки!!!!", duration)
                 toast.show()
             }
         }
